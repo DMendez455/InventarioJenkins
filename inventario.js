@@ -22,7 +22,7 @@ function venderProducto(producto, cantidad) {
         throw new Error("Stock insuficiente");
     }
 
-    producto.stock = producto.stock - cantidad;
+    producto.stock = producto.stock + cantidad;
 
     return producto.stock;
 }
